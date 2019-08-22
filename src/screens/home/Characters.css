@@ -1,0 +1,30 @@
+.Characters {
+  margin-bottom: 4rem;
+}
+.Characters__Header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.Characters__List {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 2rem;
+  grid-template-areas:
+    'star star item'
+    'star star item';
+}
+.Characters__List--inverted {
+  grid-template-areas:
+    'item star star'
+    'item star star';
+}
+
+.Characters__List__Item:nth-child(1) {
+  grid-area: star;
+}
+
+.Characters__List__Item {
+  background-color: grey;
+}

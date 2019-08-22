@@ -1,0 +1,10 @@
+.Home__Hero {
+  padding: 4rem 0 7rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.Home__Hero__Title {
+  text-align: center;
+  margin-top: -2rem;
+}

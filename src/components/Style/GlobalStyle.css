@@ -1,0 +1,208 @@
+:root {
+  --color-primary: hsla(48, 78%, 73%, 1);
+  --color-secondary: hsl(240, 43%, 13%);
+
+  --text-primary: rgba(0, 0, 0, 0.87);
+  --text-secondary: #fff;
+
+  --bg-primary: #fff;
+  --bg-secondary: #f7f7f7;
+  --bg-alternate: #f1f1f1;
+
+  --body-bg: var(--bg-secondary);
+  --body-color: var(--text-primary);
+
+  --navbar-bg: hsla(240, 43%, 13%, 0.5);
+
+  --font-family: Helvetica, Arial, sans-serif;
+  --font-family-bold: Helvetica, Arial, sans-serif;
+
+  --elevation1: 0 1px 3px rgba(0, 0, 0, 0.12);
+  --elevation2: 0 2px 6px 0 hsla(0, 0%, 0%, 0.2);
+
+  --zindex-modal: 9000;
+  --zindex-overlay: 8000;
+  --zindex-dropdown: 7000;
+  --zindex-header: 6000;
+  --zindex-footer: 5000;
+  --zindex-sidebar: 4000;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  font-size: 62.5%;
+  font-size: calc(1em * 0.625);
+}
+
+body {
+  margin: 0;
+}
+
+body {
+  font-family: var(--font-family);
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.5;
+
+  background-color: var(--body-bg);
+  color: var(--body-color);
+}
+
+@media (min-width: 576px) {
+  body {
+    font-size: 1.6rem;
+  }
+}
+
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-family-bold);
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+h1,
+.h1-like {
+  font-size: 2.8rem;
+  font-family: sans-serif;
+  font-weight: 500;
+}
+
+@media (min-width: 576px) {
+  h1,
+  .h1-like {
+    font-size: 3.2rem;
+  }
+}
+
+h2,
+.h2-like {
+  font-size: 2.4rem;
+  font-family: sans-serif;
+  font-weight: 500;
+}
+
+@media (min-width: 576px) {
+  h2,
+  .h2-like {
+    font-size: 2.8rem;
+  }
+}
+
+h3,
+.h3-like {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+@media (min-width: 576px) {
+  h3,
+  .h3-like {
+    font-size: 2.4rem;
+  }
+}
+
+h4,
+.h4-like {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+@media (min-width: 576px) {
+  h4,
+  .h4-like {
+    font-size: 2rem;
+  }
+}
+
+h5,
+.h5-like {
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+@media (min-width: 576px) {
+  h5,
+  .h5-like {
+    font-size: 1.8rem;
+  }
+}
+
+h6,
+.h6-like {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+@media (min-width: 576px) {
+  h6,
+  .h6-like {
+    font-size: 1.6rem;
+  }
+}
+
+p,
+address,
+ol,
+ul,
+dl,
+blockquote,
+pre {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+ul,
+dd {
+  margin: 0;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+@media (max-width: 575px) {
+  .desktop-only {
+    display: none;
+  }
+}
+
+.mobile-row {
+  display: flex;
+  flex-direction: row;
+}
+.mobile-row > * + * {
+  margin-left: 1rem;
+}
+
+@media (min-width: 576px) {
+  .mobile-row {
+    flex-direction: column;
+  }
+
+  .mobile-row > * + * {
+    margin-left: 0;
+  }
+}

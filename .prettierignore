@@ -1,0 +1,9 @@
+.cloud/*
+node_modules/*
+public/*
+scripts/*
+build/*
+.eslintrc
+package.json
+lint-staged.config.js
+src/serviceWorker.js
