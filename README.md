@@ -3,7 +3,7 @@
 The aim of the project is to build a Single Page Application (SPA) to display some informations from the [SWAPI API](https://swapi.co/).  
 This project is bootstrapped with [Create React App](https://github.com/facebook/create-react-app) and use [apollo client](https://www.apollographql.com/docs/react/) to store the data.
 
-Try it out at: https://test-swapi-project.netlify.com
+Try it out at: https://sad-kirch-4728f5.netlify.com/
 
 ## Scripts
 
